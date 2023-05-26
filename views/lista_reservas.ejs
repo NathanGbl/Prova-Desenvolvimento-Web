@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas</title>
+    <link rel="stylesheet" href="lista_reservas.css">
+</head>
+<body>
+    <h1>Lista de Reservas</h1><br>
+    <%for (var i = 0; i < reservas.length; i++){%>
+        <div>
+          <p>Nome: <%= reservas[i].db_nome %></p>
+          <p>Tipo de quarto: <%= reservas[i].db_tipo_quarto %></p>
+          <p>Data de entrada: <%= reservas[i].db_data_chegada %></p>
+          <p>Data de saída: <%= reservas[i].db_data_saida %></p>
+          <br>
+        </div>
+        <%}%>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel FEI</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <div class="conteudo">
+        <h1>Bem vindo ao Hotel FEI</h1>
+        <img src="pp2/hotel.png" alt="Logo do hotel">
+        <h2>Quartos disponíveis:</h2>
+        <div id="text">
+        Tipo 1 - 2 camas de solteiro <br>
+        Tipo 2 - 1 cama de casal <br>
+        Tipo 3 - 1 cama de casal e 1 cama de solteiro
+        </div>
+        <h3>Faça sua reserva</h3>
+        <form action="/cadastrar_reserva" method="post">
+            <div>Nome: <input type="text" name="nome"></div>
+            <div>Tipo de quarto: <input type="text" name="tipo_quarto"></div>
+            <div>Data de chegada: <input type="date" name="data_chegada"></div>
+            <div>Data de saída: <input type="date" name="data_saida"></div>
+            <input type="submit" value="Reservar">
+            <a href="/listar_reservas">Lista das reservas</a>
+    </div>
+
+    </form>
+</body>
+</html>
